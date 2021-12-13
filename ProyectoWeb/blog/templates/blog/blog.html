@@ -1,0 +1,28 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% for entrada in post %}
+<section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{entrada.imagen.url}}" alt="" style="width: 60%">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">{{entrada.titulo}}</span>
+            <span class="section-heading-upper">{{entrada.contenido}}</span>
+            <span class="section-heading-upper">Autor: {{entrada.autor}}</span>
+
+          </h2>
+          
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endfor %}    
+
+{% endblock %}
