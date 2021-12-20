@@ -19,7 +19,7 @@
 
           
         <div style="text-align: left; ">
-            Autor:  {{post.autor}}
+            Autor :  {{post.autor}}
         </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
    Categorias: 
    {% for post in post %}
     {% for categ in post.categoria.all %}
-     {{categ.nombre}} &nbsp;&nbsp;
+    <a  href="{% url 'categoria' categ.id %}" class="linksCategorias">{{categ.nombre}}</a> &nbsp;&nbsp;
     {% endfor %}
    {% endfor %}
 
