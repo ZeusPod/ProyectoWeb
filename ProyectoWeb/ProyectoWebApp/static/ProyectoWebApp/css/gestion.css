@@ -283,3 +283,14 @@ ul.errorlist{
   text-decoration: underline;
 }
 
+.contenedorFormulario{
+  background-color: rgba(110, 130, 180, 0.8);
+  width: 50%;
+  margin: auto;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: rgba(33, 37, 41, 0.1) 10px 3px 3px 0px;
+  border-radius: 5px;
+}
+
