@@ -22,6 +22,8 @@ class Producto(models.Model):
     precio = models.FloatField()
     disponibilidad = models.BooleanField(default=True)
     imagen = models.ImageField(upload_to='tienda/static/img/', blank=True, null=True)
+    create = models.DateTimeField(auto_now_add=True)
+    update = models.DateTimeField(auto_now=True)
     
     class Meta:
         verbose_name = "Producto"
