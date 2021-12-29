@@ -14,7 +14,7 @@ def contacto(request):
             nombre = request.POST.get('nombre')
             email = request.POST.get('email')
             mensaje = request.POST.get('mensaje')
-            messages.success(request, 'Mensaje enviado correctamente')
+            messages.success(request, ' Email enviado correctamente ')
             #enviamos el correo con la informacion del formulario
             
             email = EmailMessage(
